@@ -9,10 +9,18 @@ const Img = styled.img`
   width: auto;
 `;
 
+const Title = styled.h2`
+position: absolute;
+top: 10rem;
+left: 5rem;
+
+`
+
 function Logo() {
   return (
     <StyledLogo>
-      <Img src="/logo-light.png" alt="Logo" />
+      <Img src="/isaie-hotel.jpg" alt="Logo" />
+      <Title>ISAIE HOTEL</Title>
     </StyledLogo>
   );
 }
