@@ -1,3 +1,4 @@
+
 import styled from "styled-components";
 import { format, isToday } from "date-fns";
 import {
@@ -11,6 +12,7 @@ import DataItem from "../../ui/DataItem";
 import { Flag } from "../../ui/Flag";
 
 import { formatDistanceFromNow, formatCurrency } from "../../utils/helpers";
+import React from "react";
 
 const StyledBookingDataBox = styled.section`
   /* Box */

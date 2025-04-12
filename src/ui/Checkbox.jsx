@@ -1,5 +1,5 @@
+import React from "react";
 import styled from "styled-components";
-
 const StyledCheckbox = styled.div`
   display: flex;
   gap: 1.6rem;
