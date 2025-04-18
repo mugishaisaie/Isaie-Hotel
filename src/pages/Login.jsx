@@ -1,7 +1,9 @@
 
 import React from "react";
 import styled from "styled-components";
-
+import Heading from "../ui/Heading";
+import Logo from "../ui/Logo";
+import LoginForm from '../features/authentication/LoginForm'
 const LoginLayout = styled.main`
   min-height: 100vh;
   display: grid;
@@ -13,7 +15,11 @@ const LoginLayout = styled.main`
 `;
 
 function Login() {
-  return <LoginLayout>Login</LoginLayout>;
+  return <LoginLayout>
+    <Logo />
+    <Heading as="h4">Login to your Account</Heading>
+    <LoginForm />
+  </LoginLayout>;
 }
 
 export default Login;
