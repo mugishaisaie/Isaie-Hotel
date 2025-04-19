@@ -11,7 +11,7 @@ import toast from "react-hot-toast";
         onSuccess: (user)=>{
             // console.log(user)
             // save the user data in cache
-            queryClient.setQueriesData(['user'],user);
+            queryClient.setQueryData(['user'],user.user);
             navigate('/dashboard',{replace:true})
             toast.success("Login successful")
         },
