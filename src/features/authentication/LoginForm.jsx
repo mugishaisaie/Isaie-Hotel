@@ -8,8 +8,8 @@ import useLogin from "./useLogin";
 
 
 function LoginForm() {
-  const [email, setEmail] = useState("isaiecode@gmail.com");
-  const [password, setPassword] = useState("yesayawa1");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const {login,isLoading} = useLogin();
 
