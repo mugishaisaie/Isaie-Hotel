@@ -6,3 +6,13 @@ const StyledDashboardLayout = styled.div`
   grid-template-rows: auto 34rem auto;
   gap: 2.4rem;
 `;
+
+import React from 'react'
+
+function DashboardLayout() {
+  return (
+    <div>DashboardLayout</div>
+  )
+}
+
+export default DashboardLayout
