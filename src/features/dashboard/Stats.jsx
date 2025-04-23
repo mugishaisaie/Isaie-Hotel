@@ -37,4 +37,8 @@ function Stats({bookings,confirmedStays,cabinCount,numDays}) {
   )
 }
 
+
+
+
+
 export default Stats
