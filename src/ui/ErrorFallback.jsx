@@ -32,9 +32,12 @@ const Box = styled.div`
 import React from 'react'
 import Heading from "./Heading";
 import Button from "./Button";
+import GlobalStyles from "../styles/GlobalStyle";
 
 function ErrorFallback({error,resetErrorBoundary}) {
   return (
+    <>
+    <GlobalStyles />
     <StyledErrorFallback>
       <Box>
         <Heading as="h1">Something went Wrong 🤨</Heading>
@@ -42,6 +45,7 @@ function ErrorFallback({error,resetErrorBoundary}) {
         <Button size="large" onClick={resetErrorBoundary}> try again </Button>
       </Box>
     </StyledErrorFallback>
+    </>
   )
 }
 
