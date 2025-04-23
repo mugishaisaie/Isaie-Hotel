@@ -13,4 +13,6 @@ const Tag = styled.span`
   background-color: var(--color-${(props) => props.type}-100);
 `;
 
-export default Tag;
+
+
+export default Tag

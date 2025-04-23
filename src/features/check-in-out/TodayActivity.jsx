@@ -36,14 +36,32 @@ const NoActivity = styled.p`
   margin-top: 0.8rem;
 `;
 
-function Today() {
+
+import React from 'react'
+import useTodayActivity from "./useTodayActivity";
+import Spinner from "../../ui/Spinner";
+import TodayItem from "./TodayItem";
+
+function TodayActivity() {
+  const {activities,isLoading} = useTodayActivity();
   return (
     <StyledToday>
       <Row type="horizontal">
         <Heading as="h2">Today</Heading>
       </Row>
+      {!isLoading ?
+      (
+        activities?.length > 0 ?(
+          <TodayList>
+            {activities.map((activity)=><TodayItem activity={activity} key={activity.id} />)}
+          </TodayList>
+        ):(
+          <NoActivity>No Activity Today ....</NoActivity>
+        )
+      )
+      : <Spinner />}
     </StyledToday>
   );
 }
 
-export default Today;
+export default TodayActivity
