@@ -4,6 +4,7 @@ import { HiOutlineBriefcase, HiOutlineCalendar, HiOutlineChartBar } from 'react-
 import { HiOutlineBanknotes, HiOutlineCalendarDays } from 'react-icons/hi2';
 import { formatCurrency } from '../../utils/helpers';
 function Stats({bookings,confirmedStays,cabinCount,numDays}) {
+  console.log(bookings,"Stats")
 // 1
     const numBookings =bookings.length;
     // 2
