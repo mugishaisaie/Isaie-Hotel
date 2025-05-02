@@ -7,11 +7,16 @@ import LoginForm from '../features/authentication/LoginForm'
 const LoginLayout = styled.main`
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 48rem;
+  grid-template-columns:minmax(0,48rem) ;
   align-content: center;
   justify-content: center;
   gap: 3.2rem;
   background-color: var(--color-grey-50);
+  padding: 0.7rem 1rem;
+  /* @media (max-width: 768px) {
+  grid-template-columns: 100%;
+} */
+  /* background: red; */
 `;
 
 function Login() {

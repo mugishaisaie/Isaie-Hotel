@@ -8,7 +8,17 @@ ${(props)=>props.as === "h4" &&  css`
 font-size: 3rem;
 text-align: center;
 font-weight:600
+
+@media (max-width: 679px) {
+    font-size: 1.4rem;
+    
+}
 `}
+
+@media (max-width: 679px) {
+    font-size: 1.4rem;
+    
+}
 `
 
 
