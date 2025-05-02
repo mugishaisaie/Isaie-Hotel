@@ -26,7 +26,6 @@ ${(props) =>
 
 /* responsiveness */
    @media (max-width: 767px) {
-    background:blue;
     padding:0;
     margin:0;
     width:100%;
